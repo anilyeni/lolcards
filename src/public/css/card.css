@@ -1,0 +1,180 @@
+@import 'http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css';
+
+.card {
+    -moz-box-shadow: 0 0 3px #fff;
+    -webkit-box-shadow: 0 0 3px #fff;
+    box-shadow: 0px 0px 3px #fff;
+    border: 1px solid #fff;
+    border-radius: 3px;
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin:10px;
+}
+
+.card .card-header {
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.38);
+    text-align: center;
+}
+
+.card .card-name {
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+}
+.card .card-title {
+    display: block;
+    font-size: 12px;
+}
+
+.card .card-spell {
+    float: left;
+}
+.card .card-spell img{
+    width: 52px;
+    border-style: solid;
+    border-width: 6px;
+    -moz-border-image: url("/img/icons/char-border.png") 6 repeat;
+    -webkit-border-image: url("/img/icons/char-border.png") 6 repeat;
+    -o-border-image: url("/img/icons/char-border.png") 6 repeat;
+    border-image: url("/img/icons/char-border.png") 6 fill repeat;
+    margin: 1px;
+}
+
+.card .card-level {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    left: 5px;
+    top: 5px;
+    position: absolute;
+    text-align: center;
+    line-height: 33px;
+    background-color: rgba(117, 117, 117, 0.44);
+    font-size: 12px;
+    color: #FBFBFB;
+    font-weight: bold;
+}
+
+.card .card-stats {
+    font-size: 11px;
+    background-color: rgba(0, 0, 0, 0.50);
+    margin-top: 30px;
+}
+
+.card .card-stat {
+    padding: 4px 10px;
+}
+.card .card-icon {
+    width: 15px;
+    height: 15px;
+    display: block;
+    padding-left: 20px;
+}
+
+.card .card-bar {
+    font-size: 11px;
+    height: 15px;
+    margin: 2px 0px 2px 0px;
+    text-align: center;
+    border: 1px solid #bcbcbc;
+    border-left: 0;
+    border-right: 0;
+}
+
+.card .card-health {
+    background-color: #019b09;
+}
+
+.card .card-mana {
+    background-color: #1371d6;
+}
+
+.card .card-stat-hpregen {
+    background-image: url("/img/stats/healthregen.png");
+    background-repeat: no-repeat;
+}
+.card .card-stat-attackdamage {
+    background-image: url("/img/stats/attackdamage.png");
+    background-repeat: no-repeat;
+}
+
+.card .card-stat-abilitypower {
+    background-image: url("/img/stats/abilitypower.png");
+    background-repeat: no-repeat;
+}
+
+.card .card-stat-armor {
+    background-image: url("/img/stats/armor.png");
+    background-repeat: no-repeat;
+}
+
+.card .card-stat-magicresistance {
+    background-image: url("/img/stats/magicresistance.png");
+    background-repeat: no-repeat;
+}
+
+.card .card-stat-mpregen {
+    background-image: url("/img/stats/manaregen.png");
+    background-repeat: no-repeat;
+}
+
+.card .card-bars {
+    margin-top: 5px;
+}
+
+.card-item-container {
+    float: left;
+    margin: 5px;
+    margin-top: 20px;
+}
+
+.card-item {
+
+    border-style: solid;
+    border-width: 6px;
+    -moz-border-image: url("/img/icons/item-border.png") 6 repeat;
+    -webkit-border-image: url("/img/icons/item-border.png") 6 repeat;
+    -o-border-image: url("/img/icons/item-border.png") 6 repeat;
+    border-image: url("/img/icons/item-border.png") 6 fill repeat;
+}
+
+.card-item img {
+    width: 32px;
+    height: 32px;
+}
+
+.card-spell .progress {
+    height: 10px;
+    margin: 0 1px;
+    background: #000;
+    border-radius: 0;
+}
+
+.card-spell .progress-bar {
+    font-size: 10px;
+    line-height: 11px;
+}
+
+.card-bars .progress {
+    margin: 5px 0px;
+    height: 14px;
+}
+
+.card-bars .progress-bar {
+    font-size: 11px;
+    line-height: 12px;
+}
+
+.progress-bar-spell {
+    background-color: #d58512;
+}
+
+.progress-bar-hp {
+    background-color: #019b09;
+}
+
+.progress-bar-mana {
+    background-color: #1371d6;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html ng-app="lol">
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="js/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/chars.css">
+    <link rel="stylesheet" type="text/css" href="css/card.css">
+</head>
+<body>
+
+<div id="lolcontainer" class="container" ng-controller="CharacterController as charCtrl">
+    <div class="row" uib-collapse="charCtrl.isCollapsed()">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div>Total Level : {{charCtrl.totalLevel()}}</div>
+                    <div>Total Gold : {{charCtrl.calcTotalGold()}}</div>
+                </div>
+                <div id="champions-header"class="col-md-6">
+                    <span>League of Legends Cards</span>
+                </div>
+                <div class="col-md-3">
+                    <button ng-show="(charCtrl.selects.length == 3)" class="pull-right btn btn-lg btn-warning btn-lol"
+                            ng-click="charCtrl.lockIn()">
+                        LOCK IN
+                    </button>
+                </div>
+            </div>
+            <ng-include src="'/js/lol/template/champions-list.html'"></ng-include>
+
+        </div>
+    </div>
+    <div class="row selected-champions">
+        <div class="col-md-offset-2 col-sm-8 col-md-8">
+
+            <div class="col-sm-4 col-md-4" ng-repeat="select in charCtrl.selects">
+
+                <div class="card col-md-12" style="background-image: url('{{charCtrl.loadingBaseUrl}}{{select.key}}_0.jpg')">
+                    <div class="card-level">{{select.level()}}</div>
+                    <div class="row card-header">
+                        <span class="card-name">{{select.name}}</span>
+                        <span class="card-title">{{select.title}}</span>
+                    </div>
+                    <ng-include src="'/js/lol/template/card-stats.html'"></ng-include>
+                    <ng-include src="'/js/lol/template/card-items.html'"></ng-include>
+                    <ng-include src="'/js/lol/template/card-bars.html'"></ng-include>
+                    <ng-include src="'/js/lol/template/card-spells.html'"></ng-include>
+                </div>
+
+            </div>
+
+
+            <div class="col-sm-4 col-md-4" ng-repeat="select in charCtrl.computerSelects">
+
+                <div class="card col-md-12" style="background-image: url('{{loadingBaseUrl}}{{select.key}}_0.jpg')">
+                    <div class="card-level">{{select.level()}}</div>
+                    <div class="row card-header">
+                        <span class="card-name">{{select.name}}</span>
+                        <span class="card-title">{{select.title}}</span>
+                    </div>
+                    <ng-include src="'/js/lol/template/card-stats.html'"></ng-include>
+                    <ng-include src="'/js/lol/template/card-items.html'"></ng-include>
+                    <ng-include src="'/js/lol/template/card-bars.html'"></ng-include>
+                    <ng-include src="'/js/lol/template/card-spells.html'"></ng-include>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+<script type="text/javascript" src="js/bower_components/angular/angular.min.js"></script>
+<script type="text/javascript" src="js/bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="js/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
+<script type="text/javascript" src="js/node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+<script type="text/javascript" src="js/lol/app.js"></script>
+</body>
+</html>
