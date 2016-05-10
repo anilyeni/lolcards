@@ -1,0 +1,27 @@
+<div class="row card-stats">
+
+    <div class="card-stat col-sm-6 col-md-6">
+        <span uib-tooltip="Attach Damage" class="card-icon card-stat-attackdamage">
+            {{calc.calcAttackDamage(select) | number:1}}
+        </span>
+    </div>
+
+    <div class="card-stat col-sm-6 col-md-6">
+        <span uib-tooltip="Magic Damage" class="card-icon card-stat-abilitypower">
+            {{calc.calcMagicDamage(select) | number:1}}
+        </span>
+    </div>
+
+    <div class="card-stat col-sm-6 col-md-6">
+        <span uib-tooltip="Armor" class="card-icon card-stat-armor">
+            {{calc.calcArmor(select) | number:1}}
+        </span>
+    </div>
+
+    <div class="card-stat col-sm-6 col-md-6">
+        <span uib-tooltip="Magic Resist" class="card-icon card-stat-magicresistance">
+            {{calc.calcMR(select) | number:1}}
+        </span>
+    </div>
+
+</div>

@@ -1,0 +1,9 @@
+<div class="row card-bars">
+    <uib-progressbar class="progress-striped " type="hp">
+        {{calc.calcHP(select) | number:1}}
+    </uib-progressbar>
+
+    <uib-progressbar class="progress-striped" type="mana">
+        {{calc.calcMP(select) | number:1}}
+    </uib-progressbar>
+</div>

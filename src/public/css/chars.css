@@ -1,0 +1,124 @@
+@import url(https://fonts.googleapis.com/css?family=Comfortaa);
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+body {
+    font-family: 'Open Sans', cursive;
+    background-image: url("/img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+}
+
+#lolcontainer {
+    background-color: rgba(0, 0, 0, 0.46);
+}
+
+#champions-header {
+    text-align: center;
+}
+
+#champions-header span {
+    font-family: 'Indie Flower';
+    color: #CFE8FF;
+    font-size: 28px;
+    text-shadow: 0px -1px 4px rgb(0, 60, 234), 0px 10px 10px #6C8EC1, 0px -10px 20px #1F61DA, 0px -18px 40px #6599DA;
+}
+
+#champions-list {
+    overflow: auto;
+    height: 207px;
+    padding: 5px 0px 0 30px;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+#champions-list .char-img {
+    width: 48px;
+    height: 48px;
+
+}
+
+.char-img-container.selected {
+    opacity: 0.2;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+#champions-list .char-container {
+    float: left;
+    margin: 3px;
+    cursor: pointer;
+}
+
+#champions-list .char-img-container {
+
+    border-style: solid;
+    border-width: 6px;
+    -moz-border-image: url("/img/icons/char-border.png") 6 repeat;
+    -webkit-border-image: url("/img/icons/char-border.png") 6 repeat;
+    -o-border-image: url("/img/icons/char-border.png") 6 repeat;
+    border-image: url("/img/icons/char-border.png") 6 fill repeat;
+}
+
+.selected-champions  {
+    margin-top: 10px;
+}
+
+.modal-content{
+    background-color: #000000;
+}
+
+.modal-dialog {
+    border-style: solid;
+    border-width: 6px;
+    -moz-border-image: url("/img/icons/item-border.png") 6 repeat;
+    -webkit-border-image: url("/img/icons/item-border.png") 6 repeat;
+    -o-border-image: url("/img/icons/item-border.png") 6 repeat;
+    border-image: url("/img/icons/item-border.png") 6 fill repeat;
+}
+
+#items-list {
+    overflow: auto;
+    height: 400px;
+}
+
+#items-list .item-img {
+    width: 48px;
+    height: 48px;
+
+}
+
+.item-img-container.selected {
+    opacity: 0.2;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+#items-list .item-img-container {
+
+    border-style: solid;
+    border-width: 6px;
+    -moz-border-image: url("/img/icons/item-border.png") 6 repeat;
+    -webkit-border-image: url("/img/icons/item-border.png") 6 repeat;
+    -o-border-image: url("/img/icons/item-border.png") 6 repeat;
+    border-image: url("/img/icons/item-border.png") 6 fill repeat;
+}
+
+#items-list .item-container {
+    float: left;
+    margin: 3px;
+    cursor: pointer;
+}
+
+#items-list .item-price {
+    text-align: center;
+    font-size: 11px;
+}
+
+.progress-bar {
+
+}
+
+.btn-lol {
+    background-image: url("/img/button-bg.png");
+    height: 38px;
+    font-size: 14px;
+    width: 200px;
+}

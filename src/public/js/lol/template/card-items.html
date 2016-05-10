@@ -1,0 +1,14 @@
+<div class="row card-items">
+    <div class="card-item-container" ng-repeat="item in select.items track by $index">
+        <div class="card-item" ng-if="item == false">
+            <a href ng-click="charCtrl.open(select, $index)" >
+                <img  src="/img/icons/qm.png"/>
+            </a>
+        </div>
+        <div class="card-item" ng-if="item != false">
+            <a href ng-click="charCtrl.open(select, $index)" >
+                <img ng-src="{{imageBaseUrl}}/item/{{item.image.full}}"/>
+            </a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<div class="modal-content">
+    <div class="modal-body">
+        <div id="items-list">
+            <div uib-tooltip="{{item.name}}" class="item-container" ng-repeat="item in itemsCtrl.items" ng-click="itemsCtrl.select(item)">
+                <div ng-class="{'item-img-container' : true, 'selected': itemsCtrl.isSelected(item)}">
+                    <div class="item-img" style="background: url('{{imageBaseUrl}}/sprite/{{item.image.sprite}}') -{{item.image.x}}px -{{item.image.y}}px no-repeat;">
+                    </div>
+                </div>
+                <div class="item-price">{{item.gold.total}}</div>
+            </div>
+        </div>
+    </div>
+</div>
