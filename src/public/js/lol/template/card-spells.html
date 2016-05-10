@@ -1,6 +1,6 @@
 <div class="row card-spells">
     <div class="card-spell" ng-repeat="spell in select.spells">
-        <a uib-popover-html="htmlPopover" uib-tooltip="{{spell.name}}" href ng-click="charCtrl.spellClick(spell)" >
+        <a  uib-tooltip="{{spell.name}}" href ng-click="charCtrl.spellClick(spell)" >
             <img ng-src="{{imageBaseUrl}}/spell/{{spell.image.full}}"/>
         </a>
         <uib-progressbar class="progress-striped active" value="spell.level" max="5" type="spell">{{spell.level}}</uib-progressbar>
